@@ -22,7 +22,11 @@ export const protect = async (req, res, next) => {
     // get user details from the token ----> exclude password
     const user = await User.findById(decoded.userId).select("-password");
 
+<<<<<<< HEAD
     // Assigns token user to req.user
+=======
+    // Assigns token userId to req.userId
+>>>>>>> 75d643567fcbef7acc20fead185601256e2775ab
     req.user = user;
 
     // calls next function to proceed to next middleware or route

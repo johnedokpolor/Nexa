@@ -401,6 +401,7 @@ export const TASK_REMINDER_TEMPLATE = `
   </body>
 </html>
 `;
+<<<<<<< HEAD
 
 export const WAITLIST_EMAIL_TEMPLATE = `
 <!DOCTYPE html>
@@ -427,3 +428,5 @@ export const WAITLIST_EMAIL_TEMPLATE = `
 </body>
 </html>
 `;
+=======
+>>>>>>> 75d643567fcbef7acc20fead185601256e2775ab

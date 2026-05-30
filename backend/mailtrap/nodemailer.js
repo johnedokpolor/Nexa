@@ -9,7 +9,10 @@ import {
   TASK_REMINDER_TEMPLATE,
   LOGOUT_EMAIL_TEMPLATE,
   COMPLETE_TASK_USER_TEMPLATE,
+<<<<<<< HEAD
   WAITLIST_EMAIL_TEMPLATE,
+=======
+>>>>>>> 75d643567fcbef7acc20fead185601256e2775ab
 } from "./emailTemplates.js";
 
 var transporter = nodemailer.createTransport({
@@ -25,7 +28,11 @@ export const sendVerificationEmail = (
   email,
   name,
   verificationToken,
+<<<<<<< HEAD
   tokenExpiry,
+=======
+  tokenExpiry
+>>>>>>> 75d643567fcbef7acc20fead185601256e2775ab
 ) => {
   var mailOptions = {
     from: '"Nexa" johnedokpolor@gmail.com',
@@ -97,7 +104,11 @@ export const sendLoginEmail = (email, name, loginDate) => {
     subject: "Login Notification from Nexa",
     html: LOGIN_EMAIL_TEMPLATE.replace("{loginDate}", loginDate).replace(
       "{user}",
+<<<<<<< HEAD
       name,
+=======
+      name
+>>>>>>> 75d643567fcbef7acc20fead185601256e2775ab
     ),
   };
   transporter.sendMail(mailOptions, function (error, info) {
@@ -115,7 +126,11 @@ export const sendLogoutEmail = (email, name, logoutDate) => {
     subject: "Logout Notification from Nexa",
     html: LOGOUT_EMAIL_TEMPLATE.replace("{logoutDate}", logoutDate).replace(
       "{user}",
+<<<<<<< HEAD
       name,
+=======
+      name
+>>>>>>> 75d643567fcbef7acc20fead185601256e2775ab
     ),
   };
   transporter.sendMail(mailOptions, function (error, info) {
@@ -135,7 +150,11 @@ export const sendTaskEmail = (
   priority,
   formatedDate,
   url,
+<<<<<<< HEAD
   admin,
+=======
+  admin
+>>>>>>> 75d643567fcbef7acc20fead185601256e2775ab
 ) => {
   var mailOptions = {
     from: '"Nexa" johnedokpolor@gmail.com',
@@ -166,7 +185,11 @@ export const sendCompleteTaskUserEmail = (
   priority,
   formatedDate,
   url,
+<<<<<<< HEAD
   admin,
+=======
+  admin
+>>>>>>> 75d643567fcbef7acc20fead185601256e2775ab
 ) => {
   var mailOptions = {
     from: '"Nexa" johnedokpolor@gmail.com',
@@ -205,6 +228,7 @@ export const sendTaskReminderEmail = (email, name, title, description) => {
     }
   });
 };
+<<<<<<< HEAD
 
 export const sendWaitlistEmail = (email, name) => {
   var mailOptions = {
@@ -221,3 +245,5 @@ export const sendWaitlistEmail = (email, name) => {
     }
   });
 };
+=======
+>>>>>>> 75d643567fcbef7acc20fead185601256e2775ab
