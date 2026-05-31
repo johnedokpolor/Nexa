@@ -19,7 +19,7 @@ export default defineConfig({
         background_color: "#ffffff",
         display: "standalone", // Makes it feel like a native mobile app without browser bars
         orientation: "portrait",
-        start_url: "/",
+        start_url: "/login",
         icons: [
           {
             src: "nexa-icon-192x192.png",
