@@ -5,10 +5,6 @@ import authRoutes from "./routes/authRoutes.js";
 import userRoutes from "./routes/userRoutes.js";
 import taskRoutes from "./routes/taskRoutes.js";
 import reportRoutes from "./routes/reportRoutes.js";
-<<<<<<< HEAD
-import waitlistRoutes from "./controllers/waitlist/waitlistRoutes.js";
-=======
->>>>>>> 75d643567fcbef7acc20fead185601256e2775ab
 import cookieParser from "cookie-parser";
 import cors from "cors";
 import "dotenv/config";
@@ -26,7 +22,7 @@ app.use(express.json());
 
 // CORS Policy Middleware
 const allowedOrigins = [process.env.CLIENT_URL, process.env.DEVELOPMENT_URL];
-<<<<<<< HEAD
+
 // app.use(
 //   cors({
 //     origin: function (origin, callback) {
@@ -40,7 +36,6 @@ const allowedOrigins = [process.env.CLIENT_URL, process.env.DEVELOPMENT_URL];
 //   })
 // );
 app.use(cors({ origin: "*", credentials: true }));
-=======
 app.use(
   cors({
     origin: function (origin, callback) {
@@ -53,18 +48,12 @@ app.use(
     credentials: true,
   })
 );
->>>>>>> 75d643567fcbef7acc20fead185601256e2775ab
 
 // Enables Routing from AuthRoutes
 app.use("/api/auth", authRoutes);
 app.use("/api/users", userRoutes);
 app.use("/api/tasks", taskRoutes);
 app.use("/api/reports", reportRoutes);
-<<<<<<< HEAD
-app.use("/api/waitlist", waitlistRoutes);
-=======
->>>>>>> 75d643567fcbef7acc20fead185601256e2775ab
-
 // Server uploads folder
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
